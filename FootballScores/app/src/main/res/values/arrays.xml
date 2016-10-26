@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="league_codes">
+        <item>@integer/league_code_1</item>
+        <item>@integer/league_code_5</item>
+        <item>@integer/league_code_6</item>
+        <item>@integer/league_code_8</item>
+        <item>@integer/league_code_11</item>
+        <item>@integer/league_code_12</item>
+        <!--<item>@integer/league_code_2</item>-->
+        <!--<item>@integer/league_code_3</item>-->
+        <!--<item>@integer/league_code_4</item>-->
+        <!--<item>@integer/league_code_7</item>-->
+        <!--<item>@integer/league_code_9</item>-->
+        <!--<item>@integer/league_code_10</item>-->
+    </integer-array>
+
+    <integer-array name="league_indexes">
+        <item>@integer/league_index_bundesliga_1</item>
+        <item>@integer/league_index_premier_league</item>
+        <item>@integer/league_index_primera_division</item>
+        <item>@integer/league_index_serie_a</item>
+        <item>@integer/league_index_eredivisie</item>
+        <item>@integer/league_index_champions_league</item>
+        <!--<item>@integer/league_index_bundesliga_2</item>-->
+        <!--<item>@integer/league_index_ligue_1</item>-->
+        <!--<item>@integer/league_index_ligue_2</item>-->
+        <!--<item>@integer/league_index_segunda_division</item>-->
+        <!--<item>@integer/league_index_primeira_liga</item>-->
+        <!--<item>@integer/league_index_bundesliga_3</item>-->
+    </integer-array>
+
+    <string-array name="league_labels">
+        <item>@string/league_label_1</item>
+        <item>@string/league_label_5</item>
+        <item>@string/league_label_6</item>
+        <item>@string/league_label_8</item>
+        <item>@string/league_label_11</item>
+        <item>@string/league_label_12</item>
+        <item>@string/league_label_2</item>
+        <item>@string/league_label_3</item>
+        <item>@string/league_label_4</item>
+        <item>@string/league_label_7</item>
+        <item>@string/league_label_9</item>
+        <item>@string/league_label_10</item>
+    </string-array>
+</resources>

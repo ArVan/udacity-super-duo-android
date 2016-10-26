@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_latest_game"
+    style="@style/AppWidgetTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/widget_margin"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_crest"
+                style="@style/widgetImage"
+                />
+
+            <TextView
+                android:id="@+id/home_name"
+                style="@style/WidgetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/test_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score_textview"
+                style="@style/WidgetText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                tools:text="@string/test_text"
+                android:textSize="@dimen/Score" />
+
+            <TextView
+                android:id="@+id/date_textview"
+                style="@style/WidgetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/test_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/away_crest"
+                style="@style/widgetImage" />
+
+            <TextView
+                android:id="@+id/away_name"
+                style="@style/WidgetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/test_text" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.jaschke.alexandria.AddBook">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/eancontainer"
+            style="@style/section"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ean"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/input_hint"
+                android:inputType="number"
+                android:maxLength="@integer/ean_size"
+                android:maxLines="1"
+                android:minEms="@integer/ean_width"
+                android:saveEnabled="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textAllCaps="true"
+                    android:textSize="28sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/scan_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="@string/scan_button"
+                    android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/foundBookContainer"
+                style="@style/card"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                tools:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/bookCover"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/book_cover"
+                    tools:src="@drawable/hp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/bookTitle"
+                        style="@style/book_title"
+                        tools:text="Harry Potter and the Prisoner of Azkaban" />
+
+                    <TextView
+                        android:id="@+id/bookSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:textSize="@dimen/small_fontsize"
+                        tools:text="Harry Potter book 3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/book_detail"
+                            android:text="@string/authors" />
+
+                        <TextView
+                            android:id="@+id/authors"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textSize="@dimen/small_fontsize"
+                            tools:text="J.K. Rowling" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/book_detail"
+                            android:text="@string/categories" />
+
+                        <TextView
+                            android:id="@+id/categories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/small_fontsize"
+
+                            tools:text="fantasy" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            style="@style/button_light"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:contentDescription="@string/cancel_button"
+            android:gravity="center"
+            android:src="@drawable/ic_cancel_black_48dp"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/save_button"
+            style="@style/button_light"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:contentDescription="@string/save_button"
+            android:gravity="center"
+            android:src="@drawable/ic_check_black_48dp"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>
